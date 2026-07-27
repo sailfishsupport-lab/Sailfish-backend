@@ -17,7 +17,8 @@ public class MongoConfig extends AbstractMongoClientConfiguration {
 
     @Override
     public MongoClient mongoClient() {
-        ConnectionString connectionString = new ConnectionString("mongodb+srv://username:password@cluster.mongodb.net/sailfish_db?retryWrites=true&w=majority");
+        ConnectionString connectionString = new 
+            ConnectionString(mongoUri);
         MongoClientSettings mongoClientSettings = MongoClientSettings.builder()
                 .applyConnectionString(connectionString)
                 .build();
