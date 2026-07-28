@@ -17,14 +17,15 @@
     <properties>
         <java.version>17</java.version>
     </properties>
-
-    <dependencies>
-        <!-- Spring Boot Web -->
+         <dependencies>
+                  
+                  <!-- Spring Boot Web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+             
         <!-- Spring Boot Starter Data JPA -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -36,6 +37,13 @@
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
             <scope>runtime</scope>
+        </dependency>
+                  
+               <!-- Spring Boot Starter Data MongoDB -->
+        <dependency>
+
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
 
         <!-- Spring Boot Mail for OTP -->
