@@ -13,7 +13,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
-                        .allowedOrigins("https://your-frontend-domain.onrender.com") // Yahan apni website ka link daal dena
+                        .allowedOrigins("https://sailfish-frontend.onrender.com") // Yahan apni website ka link daal dena
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("*")
                         .allowCredentials(true);
