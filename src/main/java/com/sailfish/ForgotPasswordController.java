@@ -19,10 +19,10 @@ public class ForgotPasswordController {
         if (existingUser ==null) {
              return "email not found";
         } else {
-        existinguser .setPassword(request.getPassword());
+        existingUser .setPassword(request.getPassword());
         userRepository .save(existingUser);
         return "Password Updated
-        Succesfully	!";
+        Succesfully!";
         }
     }
 }
