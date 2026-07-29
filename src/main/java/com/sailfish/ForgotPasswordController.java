@@ -21,8 +21,7 @@ public class ForgotPasswordController {
         } else {
         existingUser .setPassword(request.getPassword());
         userRepository .save(existingUser);
-        return "Password Updated
-        Succesfully!";
+        return "Password Updated Succesfully!";
         }
     }
 }
