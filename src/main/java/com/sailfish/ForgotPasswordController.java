@@ -16,12 +16,13 @@ public class ForgotPasswordController {
     public String forgotPassword(@RequestBody User request) {
         User existingUser = userRepository.findByEmail(request.getEmail());
         
-        if (existingUser != null) {
-            existingUser.setPassword(request.getPassword());
-            userRepository.save(existingUser);
-            return "Password Updated Successfully!";
+        if (existingUser ==null) {
+             return "email not found";
         } else {
-            return "Email not found!";
+        existinguser .setPassword(request.getPassword());
+        userRepository .save(existingUser);
+        return "Password Updated
+        Succesfully	!";
         }
     }
 }
